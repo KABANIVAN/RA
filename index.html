@@ -1,0 +1,29 @@
+<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded artoolkit='sourceType: webcam;'>
+  <a-assets>
+  
+     
+    
+
+  <!-- Jolly Roger  -->
+      <a-asset-item id="roger-obj" src="https://raw.githubusercontent.com/KABANIVAN/RA/master/jolly_roger.obj"></a-asset-item>
+    <a-asset-item id="roger-mtl" src="https://raw.githubusercontent.com/KABANIVAN/RA/master/jolly_roger.mtl"></a-asset-item> 
+
+
+     
+
+ </a-assets>
+
+  
+          
+<!-- Agregar un modelo 3d en formato .obj   -->  
+   <a-entity obj-model="obj: #roger-obj; mtl: #roger-mtl"  scale=".08 .08 .08" position="0 0 0"></a-entity>  
+   
+ 
+      
+
+		<a-marker-camera preset='hiro'></a-marker-camera>
+	</a-scene>
+</body>
